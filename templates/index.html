@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The page you were looking for doesn't exist (404)</title>
+  <title>Steins Gate - Array Trend Predictor API</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
   body {
@@ -14,7 +14,7 @@
   footer {
     position: absolute;
     bottom: 1%;
-    width: 100%;o
+    width: 100%;
     text-align: center;
     font-size: .6em;
     color: #fff
@@ -46,37 +46,57 @@
     color: #fff;
     padding-right: 5%;
   }
+  
+  .code {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9em;
+  }
+  
   .image {
     position: absolute;
     float: left;
     top: 0;
     width:60%;
   }
+  
   @media only screen and (max-width: 767px) {
     .image {
       width: 100%;
       top: -50px;
     }
     .dialog {
-    float:none;
-    text-align: center;
-    width: 90%;
-    margin-top: 70%
-  }
+      float:none;
+      text-align: center;
+      width: 90%;
+      margin-top: 70%
+    }
   }  
   </style>
 </head>
 
 <body>
-  <!-- This file lives in public/404.html -->
   <img src="light-bulb.png" class="image">
   <div>
     <div class="dialog">
-      <h1>Hey, who turned off the lights?</h1>
-      <p>For a response, pls send a json request to https://array-trend.herokuapp.com/predict </p>  
+      <h1>🔮 Steins Gate API</h1>
+      <p>
+        Array Trend Predictor - Send a POST request with JSON data to get trend predictions.
+      </p>
+      <p class="code">
+        POST https://steins--gate.herokuapp.com/predict<br>
+        {"arr": [1, 2, 3, 4, 5]}
+      </p>
+      <p>
+        Returns one of: NO_COUNT, INCREASE, DECREASE, STABLE, or VARIANCE
+      </p>
     </div>
   </div> 
 </body>
 <footer>
-    <a href="https://www.github.com/owaiskaifi">github</a> </footer>
+    <a href="https://www.github.com/owaiskaifi">GitHub</a> | 
+    <a href="https://github.com/owaiskaifi/steins-gate">Documentation</a>
+</footer>
 </html>
